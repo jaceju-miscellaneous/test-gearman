@@ -1,5 +1,10 @@
 {
   "require": {
     "sinergi/gearman": "dev-master"
+  },
+  "autoload": {
+    "classmap": [
+      "ex2/"
+    ]
   }
 }
