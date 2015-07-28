@@ -5,7 +5,7 @@ $worker->addServer(); // 預設為 localhost
 $worker->addFunction('sendEmail', 'doSendEmail');
 $worker->addFunction('resizeImage', 'doResizeImage');
 while($worker->work()) {
-    if ($worker->returnCode() != GEARMAN_SUCCESS) {}
+    if ($worker->returnCode() != GEARMAN_SUCCESS) {
         break;
     }
     sleep(1); // 無限迴圈，並讓 CPU 休息一下
