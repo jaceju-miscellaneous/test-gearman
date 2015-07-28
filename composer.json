@@ -1,0 +1,5 @@
+{
+  "require": {
+    "sinergi/gearman": "dev-master"
+  }
+}
